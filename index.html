@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Calculator</title>
+
+
+<style>
+    
+body{
+     background: rgba(17, 17, 17, 0.925);
+     margin: auto;
+     
+
+}
+.con{
+    width: 330px;
+    margin: auto;
+    height: auto;
+    font-weight: bold;
+    text-decoration: solid;
+    text-shadow: rgb(255, 255, 255);
+   
+}
+.con2{
+    width: 150px;
+    margin: auto;
+    height: auto;
+    font-weight: bold;
+    text-decoration: solid;
+    text-shadow: rgb(36, 36, 36);
+   
+}
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.wrap{
+    width: 400px;
+    margin: auto;
+    height: auto;
+    background: rgb(10, 160, 30);
+    padding: 15px;
+    border-radius: 15px;
+    border-style: ridge;
+    border-color: chocolate;
+}
+input[type=text]{
+    width: 100%;
+    padding: 10px;
+    color: azure;
+    font-size: 22px;
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 15px;
+    background: rgb(54, 54, 54);
+    border-color: rgb(235, 160, 0);
+}
+input[type=button]{
+    width: 87px;
+    padding: 10px;
+    font-size: 17px;
+    font-style: italic;
+    color:rgb(255, 145, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border-radius: 7px;
+    border-color: azure;
+}
+#del{
+    width: 100%;
+}
+</style>
+</head>
+<body>
+    <div class="con">
+    <h2 style="color: rgb(230, 230, 230);">THIS IS MY CALCULATOR</h2>
+</div>
+<div class="con2">
+    <h5 style="color: rgb(138, 135, 135);">Hope Y'all Like it</h5>
+</div>
+<div class="wrap">
+    <form name ="cal">
+      <input type="text" name="display" placeholder="CALCULATE ">
+      <br><br>
+      <input type="button" value="9" onclick="cal.display.value+='9'">
+      <input type="button" value="8" onclick="cal.display.value+='8'">
+      <input type="button" value="7" onclick="cal.display.value+='7'">
+      <input type="button" value="+" onclick="cal.display.value+='+'">
+      <br><br>
+      <input type="button" value="6" onclick="cal.display.value+='6'">
+      <input type="button" value="5" onclick="cal.display.value+='5'">
+      <input type="button" value="4" onclick="cal.display.value+='4'">
+      <input type="button" value="-" onclick="cal.display.value+='-'">
+      <br><br>
+      <input type="button" value="3" onclick="cal.display.value+='3'">
+      <input type="button" value="2" onclick="cal.display.value+='2'">
+      <input type="button" value="1" onclick="cal.display.value+='1'">
+      <input type="button" value="*" onclick="cal.display.value+='*'">
+      <br><br>
+      <input type="button" value="0" onclick="cal.display.value+='0'">
+      <input type="button" value="/" onclick="cal.display.value+='/'">
+      <input type="button" value="%" onclick="cal.display.value+='%'">
+      <input type="button" value="=" onclick="cal.display.value =eval(cal.display.value)">
+      <br><br>
+      <input type="button" value="C" onclick="cal.display.value=''" id="del">
+    
+    
+    
+    
+    
+    </form>
+
+
+</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
